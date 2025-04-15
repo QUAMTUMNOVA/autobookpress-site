@@ -1,31 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://autobookpress.com/</loc>
-    <lastmod>2025-04-14</lastmod>
+    <loc>https://autobookpress.com.au/</loc>
+    <lastmod>2025-04-16</lastmod>
+    <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://autobookpress.com/books</loc>
-    <lastmod>2025-04-14</lastmod>
+    <loc>https://autobookpress.com.au/books</loc>
+    <lastmod>2025-04-16</lastmod>
   </url>
   <url>
-    <loc>https://autobookpress.com/about</loc>
-    <lastmod>2025-04-14</lastmod>
+    <loc>https://autobookpress.com.au/about</loc>
+    <lastmod>2025-04-16</lastmod>
   </url>
   <url>
-    <loc>https://autobookpress.com/contact</loc>
-    <lastmod>2025-04-14</lastmod>
+    <loc>https://autobookpress.com.au/contact</loc>
+    <lastmod>2025-04-16</lastmod>
   </url>
   <url>
-    <loc>https://autobookpress.com/privacy.html</loc>
-    <lastmod>2025-04-15</lastmod>
+    <loc>https://autobookpress.com.au/privacy.html</loc>
+    <lastmod>2025-04-16</lastmod>
   </url>
   <url>
-    <loc>https://autobookpress.com/refund.html</loc>
-    <lastmod>2025-04-15</lastmod>
+    <loc>https://autobookpress.com.au/refund.html</loc>
+    <lastmod>2025-04-16</lastmod>
   </url>
   <url>
-    <loc>https://autobookpress.com/terms.html</loc>
-    <lastmod>2025-04-15</lastmod>
+    <loc>https://autobookpress.com.au/terms.html</loc>
+    <lastmod>2025-04-16</lastmod>
   </url>
 </urlset>
