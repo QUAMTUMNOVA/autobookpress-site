@@ -3,7 +3,6 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
   <title>AutoBookPress | AI-Powered Fiction by QUANTUMNOVA</title>
   <meta name="description" content="AutoBookPress delivers AI-generated fiction, satire, thrillers, and illustrated short stories. Read now via Gumroad & Amazon KDP." />
   <meta name="author" content="QUANTUMNOVA PTY LTD" />
@@ -32,246 +31,211 @@
   }
   </script>
 
-  <!-- ✅ Favicon -->
   <link rel="icon" type="image/png" href="/assets/autobookpress-favicon.png" />
-
-  <!-- ✅ Open Graph / Facebook -->
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://autobookpress.com.au/" />
-  <meta property="og:title" content="AutoBookPress | AI-Powered Fiction by QUANTUMNOVA" />
-  <meta property="og:description" content="Explore original short stories and illustrations — AI-generated thrillers, satire, sci-fi and more. Available now on Amazon & Gumroad." />
-  <meta property="og:image" content="https://autobookpress.com.au/assets/covers/meth-monkey.jpg" />
-
-  <!-- ✅ Twitter / X -->
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="AutoBookPress | AI Fiction & Illustrated Stories" />
-  <meta name="twitter:description" content="Discover the future of fiction. Unhinged, AI-crafted short stories that go where human writers won’t." />
-  <meta name="twitter:image" content="https://autobookpress.com.au/assets/covers/meth-monkey.jpg" />
-  <meta name="twitter:site" content="@quantumnovahq" />
-  <meta name="twitter:creator" content="@quantumnovahq" />
 </head>
-  <style>
-    body {
-      background: #111;
-      color: #fff;
-      font-family: Arial, sans-serif;
-      text-align: center;
-      padding: 2rem;
-    }
-    h1 {
-      font-size: 2.5rem;
-      margin-bottom: 0.5rem;
-    }
-    p.tagline {
-      color: #ccc;
-      margin-bottom: 2rem;
-    }
-    .notice {
-      background-color: #1f2937;
-      padding: 1rem;
-      margin-bottom: 2rem;
-      border-left: 5px solid #facc15;
-      color: #facc15;
-    }
-    .long-form-section {
-      margin-top: 3rem;
-      padding: 2rem;
-      background: #1a1a1a;
-      border-radius: 10px;
-    }
-    .long-form-section h2 {
-      color: #4ade80;
-    }
-    .book-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 2rem;
-      max-width: 1000px;
-      margin: auto;
-    }
-    .book {
-      background: #1a1a1a;
-      padding: 1rem;
-      border-radius: 10px;
-    }
-    .book img {
-      width: 100%;
-      border-radius: 8px;
-      height: auto;
-    }
-    .book-title {
-      font-size: 1.1rem;
-      font-weight: bold;
-      margin: 1rem 0 0.5rem;
-    }
-    .series-tag {
-      font-size: 0.85rem;
-      color: #9ca3af;
-    }
-    .buy-link {
-      display: inline-block;
-      margin-top: 0.5rem;
-      color: #facc15;
-      font-weight: bold;
-      text-decoration: none;
-    }
-    .buy-link:hover {
-      text-decoration: underline;
-    }
-    footer {
-      margin-top: 4rem;
-      padding-top: 2rem;
-      border-top: 1px solid #333;
-      font-size: 0.875rem;
-      color: #999;
-    }
-    footer a {
-      color: #4ade80;
-      font-weight: bold;
-      text-decoration: none;
-    }
-    footer a:hover {
-      text-decoration: underline;
-    }
-    .email {
-      display: block;
-      color: #60a5fa;
-      margin-top: 0.5rem;
-    }
-  </style>
-</head>
-
+<style>
+  body {
+    background: #111;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 2rem;
+  }
+  h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+  }
+  p.tagline {
+    color: #ccc;
+    margin-bottom: 2rem;
+  }
+  .book-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1.5rem;
+    max-width: 1000px;
+    margin: auto;
+  }
+  .book {
+    background: #1a1a1a;
+    padding: 1rem;
+    border-radius: 10px;
+    transition: transform 0.2s ease;
+  }
+  .book:hover {
+    transform: scale(1.03);
+  }
+  .book img {
+    width: 100%;
+    border-radius: 8px;
+    height: auto;
+  }
+  .book-title {
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin: 1rem 0 0.5rem;
+  }
+  .series-tag {
+    font-size: 0.85rem;
+    color: #9ca3af;
+  }
+  .buy-link {
+    display: inline-block;
+    margin-top: 0.5rem;
+    color: #facc15;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  .buy-link:hover {
+    text-decoration: underline;
+  }
+  h2.section-title {
+    color: #facc15;
+    margin-top: 3rem;
+    font-size: 1.6rem;
+  }
+</style>
 <body>
-  <h1>
-    <a href="/" style="
-      background: linear-gradient(to right, #4ade80, #facc15);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      font-weight: bold;
-      text-decoration: none;
-    ">
-      AutoBookPress
-    </a>
-  </h1>
+  <h1><a href="/" style="background: linear-gradient(to right, #4ade80, #facc15); -webkit-background-clip: text; -webkit-text-fill-color: transparent; font-weight: bold; text-decoration: none;">AutoBookPress</a></h1>
 
-<p style="margin-top: 0.5rem;">
-  <a href="https://facebook.com/quantumnovaHQ" target="_blank" style="color: #4ade80; text-decoration: none; margin-right: 12px;">Facebook</a> |
-  <a href="https://instagram.com/quantumnova_hq" target="_blank" style="color: #4ade80; text-decoration: none; margin: 0 12px;">Instagram</a> |
-  <a href="https://x.com/quantumnovaHQ" target="_blank" style="color: #4ade80; text-decoration: none; margin-left: 12px;">X</a>
-</p>
+  <p style="margin-top: 0.5rem;">
+    <a href="https://facebook.com/quantumnovaHQ" target="_blank" style="color: #4ade80; text-decoration: none; margin-right: 12px;">Facebook</a> |
+    <a href="https://instagram.com/quantumnova_hq" target="_blank" style="color: #4ade80; text-decoration: none; margin: 0 12px;">Instagram</a> |
+    <a href="https://x.com/quantumnovaHQ" target="_blank" style="color: #4ade80; text-decoration: none; margin-left: 12px;">X</a>
+  </p>
 
-<!-- New line for Amazon -->
-<p style="margin: 0.5rem 0;">
-  <a href="https://amazon.com/author/autobookpress" target="_blank" style="color: #facc15; font-weight: bold; text-decoration: none;">View on Amazon</a>
-</p>
+  <p style="margin: 0.5rem 0;">
+    <a href="https://amazon.com/author/autobookpress" target="_blank" style="color: #facc15; font-weight: bold; text-decoration: none;">View on Amazon</a>
+  </p>
 
-<p class="tagline">Fiction worth flipping for — powered by QUANTUMNOVA</p>
+  <p class="tagline">Fiction worth flipping for — powered by QUANTUMNOVA</p>
 
-
-  <div style="margin: 2rem auto; max-width: 1000px; background: #1f2937; padding: 2rem; border-radius: 12px;">
-    <h2 style="color: #facc15; margin-bottom: 1.5rem;">📚 Featured Storylines</h2>
-    <div class="book-grid">
-      <div class="book">
-        <img src="/assets/covers/flush-harder.jpg" alt="Septic Steve">
-        <div class="book-title">Septic Steve: Flush Harder</div>
-        <a class="buy-link" href="https://www.amazon.com.au/dp/B0F51K2268" target="_blank">Read on Amazon</a>
-      </div>
-      <div class="book">
-        <img src="/assets/covers/macaw-dive.jpg" alt="Macaw Legends">
-        <div class="book-title">Macaw Legends: The Dive Of The Scarlet Macaw</div>
-        <a class="buy-link" href="https://www.amazon.com.au/dp/B0F5467R3X" target="_blank">Read on Amazon</a>
-      </div>
-      <div class="book">
-        <img src="/assets/covers/meth-monkey.jpg" alt="Meth Monkey Origins">
-        <div class="book-title">Meth Monkey Origins</div>
-        <a class="buy-link" href="https://www.amazon.com.au/dp/B0F4Q2NGT9" target="_blank">Read on Amazon</a>
-      </div>
+  <h2 class="section-title">📚 Featured Storylines</h2>
+  <div class="book-grid">
+    <div class="book">
+      <img src="/assets/covers/flush-harder.jpg" alt="Septic Steve">
+      <div class="book-title">Septic Steve: Flush Harder</div>
+      <a class="buy-link" href="https://www.amazon.com.au/dp/B0F51K2268" target="_blank">Read on Amazon</a>
+    </div>
+    <div class="book">
+      <img src="/assets/covers/macaw-dive.jpg" alt="Macaw Legends">
+      <div class="book-title">Macaw Legends: The Dive Of The Scarlet Macaw</div>
+      <a class="buy-link" href="https://www.amazon.com.au/dp/B0F5467R3X" target="_blank">Read on Amazon</a>
+    </div>
+    <div class="book">
+      <img src="/assets/covers/meth-monkey.jpg" alt="Meth Monkey Origins">
+      <div class="book-title">Meth Monkey Origins</div>
+      <a class="buy-link" href="https://www.amazon.com.au/dp/B0F4Q2NGT9" target="_blank">Read on Amazon</a>
     </div>
   </div>
 
-  <div class="notice">📦 Now Available in Paperback — View our collection on <a href="https://amazon.com/author/autobookpress" target="_blank" style="color: #facc15;">Amazon</a></div>
-
+  <h2 class="section-title">📘 QUANTUMNOVA Shorts</h2>
+  <div class="book-grid">
+    <!-- QUANTUMNOVA Shorts -->
+<div class="long-form-section">
+  <h2 style="color: #facc15;">🔥 QUANTUMNOVA Shorts</h2>
   <div class="book-grid">
     <div class="book">
       <img src="/assets/covers/meth-monkey.jpg" alt="Meth Monkey Origins">
       <div class="book-title">Meth Monkey Origins</div>
       <div class="series-tag">Part of the QUANTUMNOVA Shorts Series</div>
-      <a class="buy-link" href="https://www.amazon.com.au/Meth-Monkey-Origins-QUANTUMNOVA-Shorts-ebook/dp/B0F4Q2NGT9?ref_=ast_author_dp_rw&dib=eyJ2IjoiMSJ9.ENwH6I9nu5ykPrOsPgIjhcDO3rVNepkS2pCbZ3Avs-O-k9hPXNlvg_tR-FimrNkVYeJpF7QMIb9jfzNTHWwoe7C5egsOAw1TLZtYXqnoCrzUYqhNYGSWdA1lkyKQHBYK1wkU4D8bbT8k35jNaPMQCLt0A7zJX-uxV0HSqkiCS6g.qjJ-GPayrR_Nhf0TIL2gVzIzSVzQ1ZomEGn7wxYPicQ&dib_tag=AUTHOR">Buy Now</a>
+      <a class="buy-link" href="https://www.amazon.com.au/Meth-Monkey-Origins-QUANTUMNOVA-Shorts-ebook/dp/B0F4Q2NGT9" target="_blank">Buy Now</a>
     </div>
     <div class="book">
       <img src="/assets/covers/drone-protocol.jpg" alt="Drone Protocol">
       <div class="book-title">Drone Protocol</div>
       <div class="series-tag">Part of the QUANTUMNOVA Shorts Series</div>
-      <a class="buy-link" href="https://www.amazon.com.au/Drone-Protocol-QUANTUMNOVA-Shorts-AutoBook-ebook/dp/B0F4Q52QWQ?ref_=ast_author_dp_rw&dib=eyJ2IjoiMSJ9.ENwH6I9nu5ykPrOsPgIjhcDO3rVNepkS2pCbZ3Avs-O-k9hPXNlvg_tR-FimrNkVYeJpF7QMIb9jfzNTHWwoe7C5egsOAw1TLZtYXqnoCrzUYqhNYGSWdA1lkyKQHBYK1wkU4D8bbT8k35jNaPMQCLt0A7zJX-uxV0HSqkiCS6g.qjJ-GPayrR_Nhf0TIL2gVzIzSVzQ1ZomEGn7wxYPicQ&dib_tag=AUTHOR">Buy Now</a>
+      <a class="buy-link" href="https://www.amazon.com.au/Drone-Protocol-QUANTUMNOVA-Shorts-AutoBook-ebook/dp/B0F4Q52QWQ" target="_blank">Buy Now</a>
     </div>
     <div class="book">
       <img src="/assets/covers/gutter-saints.jpg" alt="The Gutter Saints">
       <div class="book-title">The Gutter Saints</div>
       <div class="series-tag">Part of the QUANTUMNOVA Shorts Series</div>
-      <a class="buy-link" href="https://www.amazon.com.au/Gutter-Saints-QUANTUMNOVA-Shorts-ebook/dp/B0F4Q4P22X?ref_=ast_author_dp_rw&dib=eyJ2IjoiMSJ9.ENwH6I9nu5ykPrOsPgIjhcDO3rVNepkS2pCbZ3Avs-O-k9hPXNlvg_tR-FimrNkVYeJpF7QMIb9jfzNTHWwoe7C5egsOAw1TLZtYXqnoCrzUYqhNYGSWdA1lkyKQHBYK1wkU4D8bbT8k35jNaPMQCLt0A7zJX-uxV0HSqkiCS6g.qjJ-GPayrR_Nhf0TIL2gVzIzSVzQ1ZomEGn7wxYPicQ&dib_tag=AUTHOR">Buy Now</a>
+      <a class="buy-link" href="https://www.amazon.com.au/Gutter-Saints-QUANTUMNOVA-Shorts-ebook/dp/B0F4Q4P22X" target="_blank">Buy Now</a>
     </div>
     <div class="book">
       <img src="/assets/covers/fracture-point.jpg" alt="Fracture Point">
       <div class="book-title">Fracture Point</div>
       <div class="series-tag">Part of the QUANTUMNOVA Shorts Series</div>
-      <a class="buy-link" href="https://www.amazon.com.au/Fracture-Point-QUANTUMNOVA-Shorts-AutoBook-ebook/dp/B0F4QX4XNB?ref_=ast_author_dp_rw&dib=eyJ2IjoiMSJ9.ENwH6I9nu5ykPrOsPgIjhcDO3rVNepkS2pCbZ3Avs-O-k9hPXNlvg_tR-FimrNkVYeJpF7QMIb9jfzNTHWwoe7C5egsOAw1TLZtYXqnoCrzUYqhNYGSWdA1lkyKQHBYK1wkU4D8bbT8k35jNaPMQCLt0A7zJX-uxV0HSqkiCS6g.qjJ-GPayrR_Nhf0TIL2gVzIzSVzQ1ZomEGn7wxYPicQ&dib_tag=AUTHOR">Buy Now</a>
+      <a class="buy-link" href="https://www.amazon.com.au/Fracture-Point-QUANTUMNOVA-Shorts-AutoBook-ebook/dp/B0F4QX4XNB" target="_blank">Buy Now</a>
     </div>
     <div class="book">
       <img src="/assets/covers/last-broadcast.jpg" alt="The Last Broadcast">
       <div class="book-title">The Last Broadcast</div>
       <div class="series-tag">Part of the QUANTUMNOVA Shorts Series</div>
-      <a class="buy-link" href="https://www.amazon.com.au/Last-Broadcast-QUANTUMNOVA-Shorts-ebook/dp/B0F2SN3775?ref_=ast_author_dp_rw&dib=eyJ2IjoiMSJ9.ENwH6I9nu5ykPrOsPgIjhcDO3rVNepkS2pCbZ3Avs-O-k9hPXNlvg_tR-FimrNkVYeJpF7QMIb9jfzNTHWwoe7C5egsOAw1TLZtYXqnoCrzUYqhNYGSWdA1lkyKQHBYK1wkU4D8bbT8k35jNaPMQCLt0A7zJX-uxV0HSqkiCS6g.qjJ-GPayrR_Nhf0TIL2gVzIzSVzQ1ZomEGn7wxYPicQ&dib_tag=AUTHOR">Buy Now</a>
+      <a class="buy-link" href="https://www.amazon.com.au/Last-Broadcast-QUANTUMNOVA-Shorts-ebook/dp/B0F2SN3775" target="_blank">Buy Now</a>
     </div>
     <div class="book">
       <img src="/assets/covers/silent-syndicate.jpg" alt="The Silent Syndicate">
       <div class="book-title">The Silent Syndicate</div>
       <div class="series-tag">Part of the QUANTUMNOVA Shorts Series</div>
-      <a class="buy-link" href="https://www.amazon.com.au/Silent-Syndicate-QUANTUMNOVA-Shorts-ebook/dp/B0F3KJR8K4?ref_=ast_author_dp_rw&dib=eyJ2IjoiMSJ9.ENwH6I9nu5ykPrOsPgIjhcDO3rVNepkS2pCbZ3Avs-O-k9hPXNlvg_tR-FimrNkVYeJpF7QMIb9jfzNTHWwoe7C5egsOAw1TLZtYXqnoCrzUYqhNYGSWdA1lkyKQHBYK1wkU4D8bbT8k35jNaPMQCLt0A7zJX-uxV0HSqkiCS6g.qjJ-GPayrR_Nhf0TIL2gVzIzSVzQ1ZomEGn7wxYPicQ&dib_tag=AUTHOR">Buy Now</a>
+      <a class="buy-link" href="https://www.amazon.com.au/Silent-Syndicate-QUANTUMNOVA-Shorts-ebook/dp/B0F3KJR8K4" target="_blank">Buy Now</a>
     </div>
     <div class="book">
       <img src="/assets/covers/tomb-of-echoes.jpg" alt="Tomb of Echoes">
       <div class="book-title">Tomb of Echoes</div>
       <div class="series-tag">Part of the QUANTUMNOVA Shorts Series</div>
-      <a class="buy-link" href="https://www.amazon.com.au/Echoes-QUANTUMNOVA-Shorts-AutoBook-Press-ebook/dp/B0F4WL6GGT?ref_=ast_author_dp_rw&dib=eyJ2IjoiMSJ9.ENwH6I9nu5ykPrOsPgIjhcDO3rVNepkS2pCbZ3Avs-O-k9hPXNlvg_tR-FimrNkVYeJpF7QMIb9jfzNTHWwoe7C5egsOAw1TLZtYXqnoCrzUYqhNYGSWdA1lkyKQHBYK1wkU4D8bbT8k35jNaPMQCLt0A7zJX-uxV0HSqkiCS6g.qjJ-GPayrR_Nhf0TIL2gVzIzSVzQ1ZomEGn7wxYPicQ&dib_tag=AUTHOR">Buy Now</a>
+      <a class="buy-link" href="https://www.amazon.com.au/Echoes-QUANTUMNOVA-Shorts-AutoBook-Press-ebook/dp/B0F4WL6GGT" target="_blank">Buy Now</a>
     </div>
     <div class="book">
       <img src="/assets/covers/code-grey.jpg" alt="Code Grey">
       <div class="book-title">Code Grey</div>
       <div class="series-tag">Part of the QUANTUMNOVA Shorts Series</div>
-      <a class="buy-link" href="https://www.amazon.com.au/Code-QUANTUMNOVA-Shorts-AutoBook-Press-ebook/dp/B0F4WSS36V?ref_=ast_author_dp_rw&dib=eyJ2IjoiMSJ9.ENwH6I9nu5ykPrOsPgIjhcDO3rVNepkS2pCbZ3Avs-O-k9hPXNlvg_tR-FimrNkVYeJpF7QMIb9jfzNTHWwoe7C5egsOAw1TLZtYXqnoCrzUYqhNYGSWdA1lkyKQHBYK1wkU4D8bbT8k35jNaPMQCLt0A7zJX-uxV0HSqkiCS6g.qjJ-GPayrR_Nhf0TIL2gVzIzSVzQ1ZomEGn7wxYPicQ&dib_tag=AUTHOR">Buy Now</a>
+      <a class="buy-link" href="https://www.amazon.com.au/Code-QUANTUMNOVA-Shorts-AutoBook-Press-ebook/dp/B0F4WSS36V" target="_blank">Buy Now</a>
     </div>
     <div class="book">
       <img src="/assets/covers/shadows-in-the-wake.jpg" alt="Shadows in the Wake">
       <div class="book-title">Shadows in the Wake</div>
       <div class="series-tag">Part of the QUANTUMNOVA Shorts Series</div>
-      <a class="buy-link" href="https://www.amazon.com.au/Shadows-QUANTUMNOVA-Shorts-AutoBook-Press-ebook/dp/B0F4WRR29L?ref_=ast_author_dp_rw&dib=eyJ2IjoiMSJ9.ENwH6I9nu5ykPrOsPgIjhcDO3rVNepkS2pCbZ3Avs-O-k9hPXNlvg_tR-FimrNkVYeJpF7QMIb9jfzNTHWwoe7C5egsOAw1TLZtYXqnoCrzUYqhNYGSWdA1lkyKQHBYK1wkU4D8bbT8k35jNaPMQCLt0A7zJX-uxV0HSqkiCS6g.qjJ-GPayrR_Nhf0TIL2gVzIzSVzQ1ZomEGn7wxYPicQ&dib_tag=AUTHOR">Buy Now</a>
+      <a class="buy-link" href="https://www.amazon.com.au/Shadows-QUANTUMNOVA-Shorts-AutoBook-Press-ebook/dp/B0F4WRR29L" target="_blank">Buy Now</a>
     </div>
     <div class="book">
       <img src="/assets/covers/septic-steve.jpg" alt="Septic Steve Origin Story">
       <div class="book-title">Septic Steve: Origin Story</div>
       <div class="series-tag">Part of the QUANTUMNOVA Shorts Series</div>
-      <a class="buy-link" href="https://quantumnovahq.gumroad.com/l/septic-steve-origin-story">Buy Now</a>
+      <a class="buy-link" href="https://quantumnovahq.gumroad.com/l/septic-steve-origin-story" target="_blank">Buy Now</a>
+    </div>
+  </div>
+</div>
+
+  </div>
+
+  <h2 class="section-title">🧠 QUANTUMNOVA Puzzles</h2>
+  <div class="book-grid">
+    <div class="book">
+      <img src="/assets/covers/3000.jpg" alt="Word Quest 3000">
+      <div class="book-title">Word Quest 3000</div>
+      <a class="buy-link" href="https://www.amazon.com/dp/B0F5P46CL2" target="_blank">View on Amazon</a>
+    </div>
+    <div class="book">
+      <img src="/assets/covers/3000xl.jpg" alt="Word Quest 3000 XL">
+      <div class="book-title">Word Quest 3000 XL</div>
+      <a class="buy-link" href="https://www.amazon.com/dp/B0F5MY54PZ" target="_blank">View on Amazon</a>
+    </div>
+    <div class="book">
+      <img src="/assets/covers/ascent.jpg" alt="Sudoku Ascent">
+      <div class="book-title">Sudoku Ascent</div>
+      <div class="series-tag">Coming Soon</div>
     </div>
   </div>
 
-  <div class="long-form-section">
-    <h2>📘 Long Form Fiction</h2>
-    <p>Explore deeper stories with expanded chapters, twists, and unforgettable characters. These titles are paperback-ready and designed for immersive reading.</p>
-    <ul>
-            <li><strong>The Deletion Protocol</strong> – Coming Soon</li>
-    </ul>
+  <h2 class="section-title">🛠️ Productivity</h2>
+  <div class="book-grid">
+    <div class="book">
+      <img src="/assets/covers/sparks.jpg" alt="Neural Sparks">
+      <div class="book-title">Neural Sparks</div>
+      <div class="series-tag">Coming Soon</div>
+    </div>
   </div>
 
   <footer>
     <p>© 2025 AutoBookPress. All rights reserved.</p>
     <p>
-      Powered by <a href="https://quantumnova.com.au" target="_blank" rel="noopener noreferrer">QUANTUMNOVA</a> |
-      <a href="https://amazon.com/author/autobookpress" target="_blank">View on Amazon</a>
+      Powered by <a href="https://quantumnova.com.au" target="_blank" rel="noopener noreferrer">QUANTUMNOVA</a>
     </p>
     <p>© 2025 QUANTUMNOVA PTY LTD — All rights reserved.</p>
     <p>Registered in Australia | ABN 43686016526</p>
     <a class="email" href="mailto:admin@quantumnova.com.au">admin@quantumnova.com.au</a>
-
     <p style="text-align: center; margin-top: 2rem; font-size: 0.9rem; color: #aaa;">
       <a href="/privacy.html" style="color: #4ade80; text-decoration: none;">Privacy Policy</a> |
       <a href="/refund.html" style="color: #4ade80; text-decoration: none;">Refund Policy</a> |
